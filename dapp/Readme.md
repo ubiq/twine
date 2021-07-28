@@ -1,4 +1,4 @@
-Ethereum Multisignature Wallet UI
+Ubiq Multisignature Wallet UI
 ===================
 
 A web user interface for the [MultiSigWallet](https://github.com/gnosis/MultiSigWallet).

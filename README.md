@@ -1,4 +1,4 @@
-Ethereum Multisignature Wallet
+Ubiq Multisignature Wallet
 ===================
 
 ## This repo has been deprecated and replaced by Safe Multisig. Please find the Safe repository here: https://github.com/gnosis/safe-contracts

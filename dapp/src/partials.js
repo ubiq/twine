@@ -256,7 +256,7 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "    <div class=\"panel-body\">\n" +
     "      <div class=\"row\">\n" +
     "        <div class=\"col-md-6 form-group\">\n" +
-    "          <label for=\"node\">Ethereum node</label>\n" +
+    "          <label for=\"node\">Ubiq node</label>\n" +
     "          <editable-select\n" +
     "            ng-model=\"config.selectedEthereumNode\"\n" +
     "            options=\"config.ethereumNodes\"\n" +

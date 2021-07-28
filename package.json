@@ -1,7 +1,7 @@
 {
   "name": "multisig-wallet-gnosis",
   "version": "1.6.0",
-  "description": "Ethereum MultiSignature Wallet. Main module, for installing all dependencies",
+  "description": "Ubiq MultiSignature Wallet. Main module, for installing all dependencies",
   "scripts": {
     "test-dapp": "cd dapp && npm test",
     "test": "sh truffle_test_runner.sh",

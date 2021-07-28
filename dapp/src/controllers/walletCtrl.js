@@ -154,8 +154,8 @@
               "<br/><br/>You can close this alert and read more on our <a href='https://github.com/gnosis/MultiSigWallet#how-to-set-a-custom-ethereum-node' target='_blank'>FAQs</a> afterwards." +
               "<br/><br/><h4>How to set the new endpoint on the Multisig</h4>" +
               "Once you have created the project ID on Infura and obtained the Infura endpoint, please set it on the Multisig by going " +
-              "to <a href='#/settings'>settings</a> page.<br/><br/>On settings, click on <u>Ethereum Node</u>'s dropdown menu and select <u>Custom configuration</u>, " +
-              "this would make the <u>Ethereum node</u>'s field editable. Please write your new <b>Infura endpoint</b> there. " +
+              "to <a href='#/settings'>settings</a> page.<br/><br/>On settings, click on <u>Ubiq Node</u>'s dropdown menu and select <u>Custom configuration</u>, " +
+              "this would make the <u>Ubiq node</u>'s field editable. Please write your new <b>Infura endpoint</b> there. " +
               "<br/><br/>Remember, if Web3 Provider is set to Default (Metamask/Sparrow), Multisig will use the Ubiq Node " +
               "endpoint coming with the injected Web3 Provider, so in that case go to your Web3 Provider (Metamask for instance) " +
               "and update/switch your Ubiq Node endpoint.";

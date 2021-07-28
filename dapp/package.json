@@ -8,7 +8,7 @@
     }
   },
   "homepage": "https://wallet.gnosis.pm",
-  "description": "Ethereum MultiSignature Wallet",
+  "description": "Ubiq MultiSignature Wallet",
   "main": "src/main.js",
   "scripts": {
     "build-linux": "build --linux",
