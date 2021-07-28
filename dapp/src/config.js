@@ -12,7 +12,7 @@ var txDefaultOrig =
   },
   gasLimit: 3141592,
   gasPrice: 18000000000,
-  ethereumNode: "https://mainnet.infura.io:443",
+  ethereumNode: "https://rpc.octano.dev:443",
   connectionChecker: {
     method : "OPTIONS",
     url : "https://www.google.com",
@@ -45,23 +45,11 @@ if (isElectron) {
 var txDefault = {
   ethereumNodes : [
     {
-      url : "https://mainnet.infura.io:443",
+      url : "https://rpc.octano.dev:443",
       name: "Remote Mainnet"
     },
     {
-      url : "https://ropsten.infura.io:443",
-      name: "Remote Ropsten"
-    },
-    {
-      url : "https://kovan.infura.io:443",
-      name: "Remote Kovan"
-    },
-    {
-      url : "https://rinkeby.infura.io:443",
-      name: "Remote Rinkeby"
-    },
-    {
-      url : "http://localhost:8545",
+      url : "http://localhost:8588",
       name: "Local node"
     }
   ],
@@ -69,22 +57,6 @@ var txDefault = {
     'mainnet': {
       name: 'Mainnet',
       address: txDefaultOrig.walletFactoryAddress
-    },
-    'ropsten': {
-      name: 'Ropsten',
-      address: '0x5cb85db3e237cac78cbb3fd63e84488cac5bd3dd'
-    },
-    'kovan': {
-      name: 'Kovan',
-      address: '0x2c992817e0152a65937527b774c7a99a84603045'
-    },
-    'rinkeby': {
-      name: 'Rinkeby',
-      address: '0x19ba60816abca236baa096105df09260a4791418'
-    },
-    'privatenet': {
-      name: 'Privatenet',
-      address: '0xd79426bcee5b46fde413ededeb38364b3e666097'
     }
   }
 };

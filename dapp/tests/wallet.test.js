@@ -5,7 +5,7 @@ describe('Wallet Service', function(){
   var utilsService = {};
   var connectionService = {};
   var accounts = ["0x291d64e40fdc9eb1ae5721e6dc5d60260e61a7b1", "0xcf9428b6257a19eb4f6640ab9ead9a5bb5bae3c1"];
-  var host = 'http://localhost:8545';
+  var host = 'http://localhost:8588';
   var web3;
   var snapId;
   var walletAddress;
