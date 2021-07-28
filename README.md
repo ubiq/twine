@@ -14,7 +14,7 @@ Features
 
 - Can hold Ether and all kind of tokens with multisig support
 - Easy to use offline signing (cold wallet) support
-- Integration with web3 wallets (Metamask, Mist, Parity, etc)
+- Integration with web3 wallets (Metamask/Sparrow, etc)
 - Transaction data and log decoding, makes transactions more readable
 - Interacting with any contracts with UI support
 - Hardware wallet support (Ledger Wallet)
@@ -99,8 +99,8 @@ License
 
 FAQ
 -------------
-### How to set a custom Ethereum Node?
-You can specify a custom Ethereum Node endpoint by going to `settings` page. Click on `Ethereum Node` dropdown menu and select `Custom configuration`, this would make the Ethereum node's field editable. Please write your new endpoint there. Remember, if `Web3 Provider` is set to `Default (Metamask, Mist, Parity)`, Multisig will use the Ethereum Node endpoint coming with the Web3 Provider, so in that case go to your injected Web3 Provider (Metamask for instance) and update/switch your Ethereum Node endpoint.
+### How to set a custom Ubiq Node?
+You can specify a custom Ubiq Node endpoint by going to `settings` page. Click on `Ethereum Node` dropdown menu and select `Custom configuration`, this would make the Ubiq node's field editable. Please write your new endpoint there. Remember, if `Web3 Provider` is set to `Default (Metamask/Sparrow)`, Multisig will use the Ubiq Node endpoint coming with the Web3 Provider, so in that case go to your injected Web3 Provider (Metamask for instance) and update/switch your Ubiq Node endpoint.
 
 ### I've imported a Multisig address or a contract address into address book but it gets detected as a EOA
 Make sure you're connected to the same network your Multisig/contract was created on, if you created it on Mainnet, you should then connect to Mainnet in order to let the system detect its type correctly.

@@ -102,7 +102,7 @@
         // See reverse mapping in loadConfig()
         if (configCopy.selectedEthereumNode) {
           if (!configCopy.selectedEthereumNode.url) {
-            Utils.dangerAlert({message:'Please specify an ethereum node.'});
+            Utils.dangerAlert({message:'Please specify a Ubiq node.'});
             return;
           }
           configCopy.ethereumNode = configCopy.selectedEthereumNode.url;
@@ -197,7 +197,7 @@
       };
 
       /**
-      * Adds a new custom ui-select item to Ethereum Node
+      * Adds a new custom ui-select item to Ubiq Node
       */
       $scope.addCustomEthereumNode = function(param) {
         var item = {

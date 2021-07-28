@@ -125,7 +125,7 @@
             }
           }
           else if (txDefault.wallet == 'remotenode') {
-            // Connect to Ethereum Node
+            // Connect to Ubiq Node
             // factory.web3 = new MultisigWeb3(new RpcSubprovider({
             //   rpcUrl: txDefault.ethereumNode
             // }));
@@ -209,7 +209,7 @@
 
         /**
         * Configure gas limit and gas price
-        * Used for ledger wallet, lightwallet and ethereum node providers
+        * Used for ledger wallet, lightwallet and Ubiq node providers
         **/
         factory.configureGas = function (params, cb) {
           $uibModal
@@ -301,7 +301,7 @@
         };
 
         // /**
-        // * Get ethereum accounts and update account list.
+        // * Get Ubiq accounts and update account list.
         // */
         // factory.updateAccounts = function (cb) {
         //   if (!isElectron && factory.coinbase) {
@@ -334,7 +334,7 @@
         // };
 
         /**
-        * Get ethereum accounts and update account list.
+        * Get Ubiq accounts and update account list.
         */
         factory.updateAccounts = function (cb) {
           return factory.web3.eth.getAccounts(

@@ -59,7 +59,7 @@
 
               if (!Web3Service.web3.isAddress($scope.book.address)) {
                 // Show alert
-                Utils.dangerAlert("Invalid Ethereum Address");
+                Utils.dangerAlert("Invalid Ubiq Address");
                 return;
               }
 

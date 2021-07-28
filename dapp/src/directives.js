@@ -259,7 +259,7 @@
               scope.items.push(
                 {
                   name: 'injected',
-                  value: 'Default (MetaMask, Mist, Parity ...)',
+                  value: 'Default (MetaMask/Sparrow)',
                 },
                 {
                   name: 'ledger',

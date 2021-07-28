@@ -112,7 +112,7 @@
 
         $scope.updateInfo = function () {
           /**
-          * Setup Ethereum Chain infos
+          * Setup Ubiq Chain infos
           */
           Transaction.getEthereumChain().then(
             function (data) {

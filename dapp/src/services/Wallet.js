@@ -58,7 +58,7 @@
                   resolve(response.data.standard)
                 },
                 function (error) {
-                  // Get gas price from Ethereum Node
+                  // Get gas price from Ubiq Node
                   Web3Service.web3.eth.getGasPrice(function (g_error, g_result) {
                     if (g_error) {
                       reject (g_error);
@@ -605,7 +605,7 @@
       };
 
       /**
-      * Get ethereum account nonce with text input prompted to the user
+      * Get Ubiq account nonce with text input prompted to the user
       **/
       wallet.getUserNonce = function (cb) {
         $uibModal

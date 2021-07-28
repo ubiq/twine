@@ -1777,7 +1777,7 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "        Update ledger firmware if version < 1.2\n" +
     "      </li>\n" +
     "      <li>\n" +
-    "        Install the Ethereum app on your Ledger wallet\n" +
+    "        Install the Ubiq app on your Ledger wallet\n" +
     "      </li>\n" +
     "      <li ng-hide=\"isElectron\">\n" +
     "        Enable Browser support and contract data on settings\n" +
@@ -2872,10 +2872,8 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "</div>\n" +
     "<div class=\"modal-body\">\n" +
     "  <p>\n" +
-    "    This wallet requires a 3rd party Ethereum account management software like\n" +
-    "    <a href=\"https://metamask.io/\" class=\"prevent-focus\" target=\"_blank\">Metamask</a>,\n" +
-    "    <a href=\"https://github.com/ethereum/mist\" target=\"_blank\">Mist</a> or\n" +
-    "    <a href=\"https://ethcore.io/parity.html\" target=\"_blank\">Parity</a>.\n" +
+    "    This wallet requires a 3rd party Ubiq account management software like\n" +
+    "    <a href=\"https://metamask.io/\" class=\"prevent-focus\" target=\"_blank\">Metamask</a>.\n" +
     "  </p>\n" +
     "  <p>\n" +
     "    You can monitor existing wallets without an account management software but you cannot create new wallets or sign transactions.\n" +

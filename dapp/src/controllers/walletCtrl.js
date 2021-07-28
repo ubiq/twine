@@ -156,9 +156,9 @@
               "Once you have created the project ID on Infura and obtained the Infura endpoint, please set it on the Multisig by going " +
               "to <a href='#/settings'>settings</a> page.<br/><br/>On settings, click on <u>Ethereum Node</u>'s dropdown menu and select <u>Custom configuration</u>, " +
               "this would make the <u>Ethereum node</u>'s field editable. Please write your new <b>Infura endpoint</b> there. " +
-              "<br/><br/>Remember, if Web3 Provider is set to Default (Metamask, Mist, Parity), Multisig will use the Ethereum Node " +
+              "<br/><br/>Remember, if Web3 Provider is set to Default (Metamask/Sparrow), Multisig will use the Ubiq Node " +
               "endpoint coming with the injected Web3 Provider, so in that case go to your Web3 Provider (Metamask for instance) " +
-              "and update/switch your Ethereum Node endpoint.";
+              "and update/switch your Ubiq Node endpoint.";
 
               BootstrapDialog.show({
                 type: BootstrapDialog.TYPE_WARNING,

@@ -260,7 +260,7 @@ this.TrezorConnect = (function () {
             }, requiredFirmware), callback);
         };
 
-        // new implementation with ethereum at beginnig
+        // new implementation with Ubiq at beginnig
         this.ethereumSignTx = function() {
             this.signEthereumTx.apply(this, arguments);
         }
@@ -405,7 +405,7 @@ this.TrezorConnect = (function () {
         };
 
         /**
-         * Sign an Ethereum message
+         * Sign an Ubiq message
          *
          * @param {string|array} path
          * @param {string} message to sign (ascii)
@@ -467,7 +467,7 @@ this.TrezorConnect = (function () {
         };
 
         /**
-         * Verify ethereum message
+         * Verify Ubiq message
          *
          * @param {string} address
          * @param {string} signature (base64)
@@ -623,7 +623,7 @@ this.TrezorConnect = (function () {
         }
 
         /**
-         * Display ethereum address on device
+         * Display Ubiq address on device
          *
          * @param {array} address
          * @param {?(string|array<number>)} requiredFirmware

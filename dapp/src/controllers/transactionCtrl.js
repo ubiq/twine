@@ -11,7 +11,7 @@
       // Get address book from localStorage
       $scope.addressBook = JSON.parse(localStorage.getItem('addressBook') || '{}');
 
-      // Get Ethereum Chain
+      // Get Ubiq Chain
       Transaction.getEthereumChain().then(
         function (data) {
           $scope.chain = data.chain;
