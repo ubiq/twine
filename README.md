@@ -7,7 +7,7 @@ Ethereum Multisignature Wallet
 
 The purpose of multisig wallets is to increase security by requiring multiple parties to agree on transactions before execution. Transactions can be executed only when confirmed by a predefined number of owners. A web user interface can be found [here](/dapp).
 
-**NOTE:** Not compatible with current NodeJS LTS. Recommended NodeJS version is v6.17.1 (last LTS for v6).
+**NOTE:** Not compatible with current NodeJS LTS. Recommended NodeJS version is v8.17.0 (last LTS for v6).
 
 Features
 -------------
@@ -41,9 +41,8 @@ git clone https://github.com/gnosis/MultiSigWallet.git
 cd MultiSigWallet
 
 # Latest NodeJS (v12.13.0) does NOT appear to work correctly.
-# You should use NVM and install Node v6.17.1 for best results: https://github.com/nvm-sh/nvm
-# Tested by @Privex on 2019-Nov-06 with v6.17.1 with success
-nvm install v6.17.1
+# You should use NVM and install Node v8.17.0 for best results: https://github.com/nvm-sh/nvm
+nvm install v8.17.0
 
 # node-gyp is required for 'npm install' to work correctly
 npm install node-gyp
