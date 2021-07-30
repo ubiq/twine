@@ -307,26 +307,12 @@
         };
 
         factory.getEthereumChain = function () {
-          return $q(function (resolve, reject) {
-            Web3Service.web3.eth.getBlock(0, function (e, block) {
-              var data = {};
-
-              if (e) {
-                reject();
-              }
-              else if (block && block.hash == "0x406f1b7dd39fca54d8c702141851ed8b755463ab5b560e6f19b963b4047418af") {
-                data.chain = "mainnet";
-                data.etherscan = "https://ubiqscan.io";
-                data.walletFactoryAddress = txDefault.walletFactoryAddresses["mainnet"].address;
-              }
-              else {
-                data.chain = "privatenet";
-                data.etherscan = "https://testnet.ubiqscan.io";
-                data.walletFactoryAddress = txDefault.walletFactoryAddresses["privatenet"].address;
-              }
-
-              resolve(data);
-            });
+          return $q(function (resolve) {
+            var data = {};
+            data.chain = "mainnet";
+            data.etherscan = "https://ubiqscan.io";
+            data.walletFactoryAddress = txDefault.walletFactoryAddresses["mainnet"].address;
+            resolve(data);
           });
         };
 
