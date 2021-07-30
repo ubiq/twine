@@ -5,7 +5,7 @@ A web user interface for the [MultiSigWallet](https://github.com/gnosis/MultiSig
 
 Requirements
 -------------
-* Node v5+ (Confirmed working on v8.17.0 - will not work on current LTS v12.13.0)
+* Node v10+ (Confirmed working on v10.24.1 - will not work on current LTS v12.13.0)
 * [Grunt-cli](http://gruntjs.com/getting-started#installing-the-cli)
 
 Install
@@ -15,16 +15,17 @@ Install
 apt install -y libusb-1.0-0-dev
 
 # Latest NodeJS (v12.13.0) does NOT appear to work correctly.
-# You should use NVM and install Node v8.17.0 for best results: https://github.com/nvm-sh/nvm
-nvm install v8.17.0
+# You should use NVM and install Node v10.24.1 for best results: https://github.com/nvm-sh/nvm
+nvm install v10.24.1
 
 git clone https://github.com/gnosis/MultiSigWallet.git
 cd MultiSigWallet/dapp
 
 # node-gyp is required for 'npm install' to work correctly
-npm install node-gyp
+npm install -g node-gyp@4.0.0
 
-npm install -g grunt-cli
+npm install -g grunt-cli@1.3.2
+npm install arr-flatten@1.1.0
 npm install
 grunt
 ```
@@ -32,6 +33,8 @@ grunt
 Test
 -------------
 ```
+npm install -g ganache-cli@6.4.3
+
 npm test
 ```
 
