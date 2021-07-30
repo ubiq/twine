@@ -27,7 +27,7 @@ var txDefaultOrig =
   wallet: "injected",
   defaultChainID: null,
   // Mainnet
-  walletFactoryAddress: "0x6e95c8e8557abc08b46f3c347ba06f8dc012763f",
+  walletFactoryAddress: "0xca86d4473490e10335bd96de7e8690fdd7e9be80",
   tokens: [
     {
       'address': '0x1FA6A37c64804C0D797bA6bC1955E50068FbF362',
@@ -62,9 +62,6 @@ var txDefault = {
 };
 
 var oldWalletFactoryAddresses = [
-  ("0x12ff9a987c648c5608b2c2a76f58de74a3bf1987").toLowerCase(),
-  ("0xed5a90efa30637606ddaf4f4b3d42bb49d79bd4e").toLowerCase(),
-  ("0xa0dbdadcbcc540be9bf4e9a812035eb1289dad73").toLowerCase()
 ];
 
 /**
