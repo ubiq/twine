@@ -533,7 +533,7 @@
           var web3Provider = new HookedWalletSubprovider({
             getAccounts: function (cb) {
               if (!factory.accounts.length) {
-                TrezorConnect.ethereumGetAddress("m/44'/60'/0'/0/0", function (response) {
+                TrezorConnect.ethereumGetAddress("m/44'/108'/0'/0/0", function (response) {
                   if (response.success) {
                     // Convert to Checksummed address
                     factory.accounts = factory.toChecksumAddress(["0x" + response.address]);
@@ -557,7 +557,7 @@
                   txData.value = '0x00'
                 }
                 TrezorConnect.ethereumSignTx(
-                  "m/44'/60'/0'/0/0", // address path - either array or string, see example
+                  "m/44'/108'/0'/0/0", // address path - either array or string, see example
                   Utils.trezorHex(txData.nonce),     // nonce - hexadecimal string
                   Utils.trezorHex(txData.gasPrice), // gas price - hexadecimal string
                   Utils.trezorHex(txData.gas), // gas limit - hexadecimal string

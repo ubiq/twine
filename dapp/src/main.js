@@ -29,7 +29,7 @@ function restServerSetup () {
   restPort = 8080;
   let connection = null;
   // Ledger legacy derivation path
-  const derivationPath = "44'/60'/0'/0";
+  const derivationPath = "44'/108'/0'/0";
   restServer.use(bodyParser.json());
   /**
   * Gets connection to Ledger HW
