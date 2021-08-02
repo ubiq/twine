@@ -3,7 +3,7 @@ var txDefaultOrig =
   websites: {
     "wallet": "https://wallet.gnosis.pm",
     "gnosis": "https://gnosis.pm",
-    "ethGasStation": "https://safe-relay.gnosis.pm/api/v1/gas-station/"
+    "ethGasStation": "https://gas.octano.dev/json/ethgasAPI.json"
   },
   resources : {
     "termsOfUse": "https://wallet.gnosis.pm/TermsofUseMultisig.pdf",
