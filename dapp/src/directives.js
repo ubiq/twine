@@ -262,16 +262,8 @@
                   value: 'Default (MetaMask/Sparrow)',
                 },
                 {
-                  name: 'ledger',
-                  value: 'Ledger Wallet',
-                },
-                {
                   name: 'remotenode',
                   value: 'Remote node',
-                },
-                {
-                  name: "trezor",
-                  value: "Trezor"
                 }
               );
             }
