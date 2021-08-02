@@ -56,71 +56,6 @@
         // Get address book from localStorage
         $scope.addressBook = JSON.parse(localStorage.getItem('addressBook') || '{}');
 
-        $scope.showSafeMigrationModal = function () {
-          $uibModal.open({
-            templateUrl: 'partials/modals/safeMigration.html',
-            size: 'lg',
-            resolve: {
-              wallet: walletCopy
-            },
-            controller: function ($scope, $uibModalInstance, Wallet, wallet) {
-
-              $scope.data = {
-                hideMigrationModal: walletCopy.safeMigrated
-              };
-
-              // Get number of confirmations
-              Wallet
-              .getRequired(
-                wallet.address,
-                function (e, confirmations) {
-                  $scope.data.threshold = confirmations.toNumber();
-                }
-              ).call();
-
-              // Get owners
-              Wallet.getOwners(wallet.address, function (e, owners) {
-                if (e) {
-                    Utils.dangerAlert(e);
-                    return;
-                }
-
-                $scope.data.owners = owners.map(function (address) { return Web3Service.toChecksumAddress(address); });
-              }).call();
-
-              $scope.create = function () {
-
-                var ownersAddresses = $scope.data.owners; // Object.keys(wallet.owners);
-                var ownersNames = [];
-
-                for (var address of ownersAddresses) {
-                  ownersNames.push(wallet.owners[address].name);
-                }
-
-                var url = 'https://gnosis-safe.io/app/#/open';
-                url += '?name=' + encodeURI(wallet.name);
-                url += '&threshold=' + $scope.data.threshold;
-                url += '&owneraddresses=' + ownersAddresses.join(',');
-                url += '&ownernames=' + encodeURI(ownersNames.join(','));
-
-                window.open(url);
-                $scope.dismiss();
-              };
-
-              $scope.dismiss = function () {
-                if ($scope.data.hideMigrationModal == true) {
-                  // Don't show this modal again
-                  wallet.safeMigrated = true;
-                } else {
-                  wallet.safeMigrated = false;
-                }
-                Wallet.updateWallet(wallet);
-                $uibModalInstance.dismiss();
-              };
-            }
-          });
-        };
-
         $scope.updateParams = function () {
 
           var batch = Web3Service.web3.createBatch();
@@ -276,11 +211,6 @@
             .then(function () {
               $scope.updateParams();
               $scope.interval = $interval($scope.updateParams, 15000);
-
-              // Handle migration modal
-              if (!walletCopy.safeMigrated) {
-                $scope.showSafeMigrationModal();
-              }
             });
         }
         startup();
