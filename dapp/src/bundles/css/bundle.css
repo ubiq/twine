@@ -22,11 +22,6 @@ html {
 
 body {
     padding-top: 70px;
-    background-image: url(../img/gnosis-logo.svg);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 512px;
-    background-attachment: fixed;
 }
 
 .navbar-brand > img {
@@ -181,22 +176,6 @@ input[name="editable-select"]:disabled {
   background: #b3c3ce;
   }
 
-.safe-features {
-  height: 180px;
-}
-
-/* .safe-features ul {
-  list-style: none;
-} */
-
-/* .safe-features li::before {
-  content: "\2022"; 
-  color: #1ba5c2; 
-  font-weight: bold; 
-  display: inline-block; 
-  width: 1em; 
-  margin-left: -1em;
-} */
 
 .safe-features .left {
   float: left;
