@@ -81,34 +81,13 @@ textarea.json-config {
   color: #889aa6;
 }
 
-/*.ui-select-choices-row:hover {
-  background-color: #143e4d !important;
-}
-
-.ui-select-bootstrap .ui-select-choices-row>span:hover {
-  background-color: #143e4d !important;
-}
-
-.ui-select-bootstrap .ui-select-choices-row.active > span {
-  background-color: #143e4d !important;
-  color: #1f7692 !important;
-}
-
-.ui-select-bootstrap .ui-select-choices-row > span {
-  color: #1f7692 !important;
-}
-
-.ui-select-bootstrap .ui-select-choices-row > span:hover {
-  color: #1f7692 !important;
-}*/
-
 input[name="editable-select"]:disabled {
   color: #fff;
 }
 
 .editable-select {
   color: #fff;
-  background: #143e4d;
+  background: #292b2c;
 }
 
 .settings-dropdown-menu {

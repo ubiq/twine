@@ -7,8 +7,8 @@
       "node": false
     }
   },
-  "homepage": "https://wallet.gnosis.pm",
-  "description": "Ubiq MultiSignature Wallet",
+  "homepage": "https://twine.ubiqsmart.com",
+  "description": "Twine - Ubiq MultiSig Wallet",
   "main": "src/main.js",
   "scripts": {
     "build-linux": "build --linux",

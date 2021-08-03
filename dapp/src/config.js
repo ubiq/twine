@@ -1,14 +1,14 @@
 var txDefaultOrig =
 {
   websites: {
-    "wallet": "https://wallet.gnosis.pm",
+    "wallet": "https://twine.ubiqsmart.com",
     "gnosis": "https://gnosis.pm",
     "ethGasStation": "https://gas.octano.dev/json/ethgasAPI.json"
   },
   resources : {
-    "termsOfUse": "https://wallet.gnosis.pm/TermsofUseMultisig.pdf",
+    "termsOfUse": "https://twine.ubiqsmart.com/TermsofUseMultisig.pdf",
     "privacyPolicy": "https://gnosis.io/privacy-policy",
-    "imprint": "https://wallet.gnosis.pm/imprint.html"
+    "imprint": "https://twine.ubiqsmart.com/imprint.html"
   },
   gasLimit: 3141592,
   gasPrice: 18000000000,
