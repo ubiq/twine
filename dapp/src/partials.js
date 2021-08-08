@@ -1324,7 +1324,10 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "    the implied warranty of <strong>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE</strong>.\n" +
     "  </p>\n" +
     "  <p>\n" +
-    "    Use at your own risk.\n" +
+    "    Use at your own risk. If you don't believe us, check the <a href=\"https://github.com/ubiq/twine\"></a>source code</a> and run the app yourself. These are the Terms of Use.\n" +
+    "  </p>\n" +
+    "  <p>\n" +
+    "    We don't track or collect anything. If you don't believe us, check the <a href=\"https://github.com/ubiq/twine\"></a>source code</a> and run the app yourself. This is the Privacy Policy.\n" +
     "  </p>\n" +
     "  <div class=\"checkbox\">\n" +
     "      <label>\n" +
